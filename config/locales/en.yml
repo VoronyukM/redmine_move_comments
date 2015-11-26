@@ -1,2 +1,4 @@
 en:
   label_move_to_issue: "Move the comment to another issue"
+  wrong_issue_id: "Wrong destination issue id is specified"
+  comment_wont_be_moved: "The comment will not be moved!"
