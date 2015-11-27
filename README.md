@@ -5,6 +5,7 @@ The plugin allows you to move a comment made to wrong issue to the right one.
 ## Features
 
 * Ability to move an issue's comment to another issue
+* If you move a comment with issue's field changes or file attachments then just the comment (text field) will be moved. All the changes and files will be left attached to the old issue.
 
 ## Screenshot
 
