@@ -8,8 +8,8 @@ The plugin allows you to move a comment made to wrong issue to the right one.
 
 ## Screenshot
 
-![Click the 'Edit' button](doc/click-edit-button.jpg "Click the 'Edit' button")
-![Fill the right issue id](doc/fill-the-right-issue-id.jpg "New field 'Move the comment to another issue'")
+![Click the 'Edit' button](doc/click-edit-button.png "Click the 'Edit' button")
+![Fill the right issue id](doc/fill-the-right-issue-id.png "New field 'Move the comment to another issue'")
 
 ## Getting the plugin
 
