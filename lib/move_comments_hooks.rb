@@ -43,7 +43,9 @@ class HelpdeskHooks < Redmine::Hook::Listener
     if !wrong_new_issue_id.nil?
       action_view = ActionView::Base.new(File.dirname(__FILE__) + '/../app/views/')
       action_view.render(
-      :partial => "notes_error"
+      :partial => "notes_error",
+      :locals => {
+        :wrong_new_issue_id => wrong_new_issue_id}
       ) 
     end
   end
