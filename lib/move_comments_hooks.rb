@@ -21,8 +21,9 @@ class MoveCommentsHooks < Redmine::Hook::Listener
         end
       rescue
       end
+      context[:journal].class.module_eval { attr_accessor :wrong_new_issue_id}
+      context[:journal].wrong_new_issue_id = nil
       if !issue_id
-        context[:journal].class.module_eval { attr_accessor :wrong_new_issue_id} 
         context[:journal].wrong_new_issue_id = new_issue_id # this will be analyzed later for showing the error message
 	return
       end
