@@ -43,7 +43,7 @@ You should be allowed to edit the comments for moving them, i.e. have 'Edit note
 
 ## Compatibility
 
-The latest version of this plugin is only compatible with Redmine 2.4.x., 2.5.x, 2.6.x, 3.1.x, 3.0.x, 3.1.x,3.2.x
+The latest version of this plugin is only compatible with Redmine 2.4.x., 2.5.x, 2.6.x, 3.0.x, 3.1.x, 3.2.x
 
 ## Contribution
 
