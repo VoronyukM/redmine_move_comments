@@ -5,6 +5,6 @@ Redmine::Plugin.register :redmine_move_comments do
   name 'Redmine Move Comments plugin'
   author 'Mikhail Voronyuk'
   description 'Redmine move comments plugin'
-  version '0.0.1'
+  version '0.0.2'
   requires_redmine :version_or_higher => '2.4.0'
 end

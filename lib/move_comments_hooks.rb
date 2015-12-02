@@ -11,6 +11,9 @@ class MoveCommentsHooks < Redmine::Hook::Listener
   # fetch 'new_issue_id' param and move the journal to another issue if presented
   def controller_journals_edit_post(context={})
     new_issue_id = context[:params]['new_issue_id']
+    # this attribute will be analyzed in any case
+    context[:journal].class.module_eval { attr_accessor :wrong_new_issue_id}
+    context[:journal].wrong_new_issue_id = nil
     if new_issue_id.present?
       current_journal = context[:journal]
       issue_id = nil
@@ -21,8 +24,6 @@ class MoveCommentsHooks < Redmine::Hook::Listener
         end
       rescue
       end
-      context[:journal].class.module_eval { attr_accessor :wrong_new_issue_id}
-      context[:journal].wrong_new_issue_id = nil
       if !issue_id
         context[:journal].wrong_new_issue_id = new_issue_id # this will be analyzed later for showing the error message
 	return
