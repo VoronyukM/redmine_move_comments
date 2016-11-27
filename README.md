@@ -19,7 +19,7 @@ A copy of the plugin can be downloaded from GitHub: http://github.com/VoronyukM/
 ## Installation
 
 ```
-cd /path/to/redmine/
+cd /path/to/redmine/plugins
 git clone https://github.com/VoronyukM/redmine_move_comments.git
 ```
 
